@@ -83,10 +83,10 @@ def buscar_auto(request):
     if(request.method == 'GET'):
 
         marca= request.GET["marca"]
-        
+       
         autos=Autos.objects.filter(marca=marca)
-        
-        return render(request, "App/resultado_busqueda_auto.html", {"autos": autos, "marca": marca})
+    
+        return render(request, "App/resultado_busqueda_auto.html", {"autos": autos, "marca": marca,})
 
     else:
         HttpResponse(f'No enviaste los datos')
