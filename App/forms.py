@@ -20,6 +20,7 @@ class Formulario_moto(forms.Form):
 class Formulario_propietario(forms.Form):
     nombre=forms.CharField()
     apellido=forms.CharField()
+    dni=forms.IntegerField()
     email=forms.EmailField()
     fechaDeAdquisicion=forms.DateField()
 

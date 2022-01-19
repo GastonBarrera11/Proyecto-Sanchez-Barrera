@@ -9,7 +9,8 @@
 
    <ul>
        {% for auto in lista %}
-         <li> {{auto.marca}} {{auto.modelo}} </li>
+       <div class="container col-12 mb-3"></div>  
+       <li> MARCA: {{auto.marca}}  MODELO: {{auto.modelo}}   COLOR: {{auto.color}}  KM: {{auto.km}} </li>
        {% endfor %}
    </ul>
 

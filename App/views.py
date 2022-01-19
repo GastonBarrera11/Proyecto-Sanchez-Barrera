@@ -127,7 +127,7 @@ def formulario_propietario(request):
 
             informacion= formulario_propietario1.cleaned_data
 
-            propietario = Propietario(nombre=informacion["nombre"], apellido=informacion["apellido"], email=informacion["email"], fechaDeAdquisicion=informacion["fechaDeAdquisicion"])
+            propietario = Propietario(nombre=informacion["nombre"], apellido=informacion["apellido"], dni=informacion["dni"], email=informacion["email"], fechaDeAdquisicion=informacion["fechaDeAdquisicion"])
 
             propietario.save()
 
