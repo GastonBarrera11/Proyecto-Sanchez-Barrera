@@ -5,7 +5,7 @@ from App.models import Autos, Motos, Propietario
 from App.forms import Formulario_auto, Formulario_moto,Formulario_propietario
 
 
-# Create your views here.
+# Create you
 
 def inicio(request):
 
